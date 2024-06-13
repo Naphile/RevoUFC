@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+
+        .mobil {
+            color: green;
+        }
+
+        #alya {
+            color: purple;
+        }
+
+        a[target] {
+            background-color: yellow;
+        }
+
+        a:hover {
+            background-color: blue;
+        }
+
+        .div {
+            width: 100px;
+            height: 100px;
+            background:linear-gradient(blue, yellow);
+        }
+
+        .font {
+            /* display: inline; */
+            color: black;
+            font-family: Arial;
+            font-style: italic;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: line-through;
+            text-shadow: -4px 4px 4px red;
+            line-height: 50%;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            text-align: left;
+            text-indent: 2rem;
+        }
+
+        span {
+            /* display: block; */
+            color: black;
+            font-family: Arial;
+            font-style: italic;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: line-through;
+            text-shadow: -4px 4px 4px red;
+            line-height: 50%;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            text-align: left;
+            text-indent: 2rem;
+        }
+
+        .container {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container div {
+            width: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14sp;
+            color: #ffeead;
+            border: 2px solid black;
+            background-color: green;
+            margin: 16px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 10px;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+
+        }
+
+        table, th{
+            border: 1px solid black;
+        }
+
+        button {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+            grid-column: 1 / span 2;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .green {
+            background-color: green;
+            color: white;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+
+        .grid-container {
+            grid-gap: 5px;
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px;
+        }
+
+        input {
+            grid-column: 1 / span 4;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 style="color: red;">Hello World!</h1> <!--Inline CSS-->
+
+    <h2>Halo</h2>
+    <p>Hai</p>
+    <p class="mobil" id="avanza">Avanza</p>
+    <p class="mobil" id="alya">Alya</p>
+
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="https://www.disney.com" target="_blank">disey.com</a>
+    <a href="https://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <br>
+
+    <div class="div"></div>
+    <br>
+
+    <p class="font">hai kamu!</p>
+    <p class="font">hai kamu!</p>
+    <p class="font">hai kamu!</p>
+    <br>
+
+    <span>hai kamu</span>
+    <span>hai kamu</span>
+    <span>hai kamu</span>
+    <br>
+
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </nav>
+    <br>
+
+    <div class="wrapper">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+        <div class="box">F</div>
+    </div>
+    <br>
+    
+    <p>KALKULATOR</p>
+     <table>
+        <tr>
+            <th colspan="4"><input type="text" name="display" id=""></th>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="red">AC</button></td>
+            <td><button class="blue">C</button></td>
+            <td><button class="orange">*</button></td>
+        </tr>
+        <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button class="orange">/</button></td>
+        </tr>
+        <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button class="orange">+</button></td>
+        </tr>
+        <tr>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button class="orange">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="black">+-</button></td>
+            <td><button>0</button></td>
+            <td><button class="black">.</button></td>
+            <td><button class="green">=</button></td>
+        </tr>
+     </table>
+     <br>
+
+     <div class="grid-container">
+        <input type="text" name="display">
+        <button class="red">AC</button>
+        <button class="blue">C</button>
+        <button class="orange">*</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="orange">/</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="orange">+</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="orange">-</button>
+        <button class="black">+-</button>
+        <button>0</button>
+        <button class="black">.</button>
+        <button class="green">=</button>
+     </div>
+</body>
+</html>
